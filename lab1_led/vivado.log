@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2024.2_AR37126 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr 29 13:09:45 2025
+# Process ID         : 15936
+# Current directory  : /home/wynnechen/project/EPS_VU13P/13p_lab/lab1_led
+# Command line       : vivado LED_lab1/LED_lab1.xpr
+# Log file           : /home/wynnechen/project/EPS_VU13P/13p_lab/lab1_led/vivado.log
+# Journal file       : /home/wynnechen/project/EPS_VU13P/13p_lab/lab1_led/vivado.jou
+# Running On         : WC-DemoNB
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 400.000 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 67111 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69259 MB
+# Available Virtual  : 66910 MB
+#-----------------------------------------------------------
+start_gui
+open_project LED_lab1/LED_lab1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from '/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Runs 36-271] Incremental checkpoint part, xcvu19p-fsva3824-2-e, does not match run part, xcvu13p-fhgb2104-2-e.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/patches/AR37126_Vivado_2024_2_preliminary_rev1/vivado/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 8092.309 ; gain = 497.211 ; free physical = 57236 ; free virtual = 62669
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 13:10:38 2025...

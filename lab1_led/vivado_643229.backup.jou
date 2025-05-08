@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2024.2_AR37126 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar 14 13:44:53 2025
+# Process ID         : 643229
+# Current directory  : /home/wynnechen/project/EPS_VU13P/lab/lab1_led
+# Command line       : vivado LED_lab1/LED_lab1.xpr
+# Log file           : /home/wynnechen/project/EPS_VU13P/lab/lab1_led/vivado.log
+# Journal file       : /home/wynnechen/project/EPS_VU13P/lab/lab1_led/vivado.jou
+# Running On         : WC-DemoNB
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 720.803 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 67111 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69259 MB
+# Available Virtual  : 64857 MB
+#-----------------------------------------------------------
+start_gui
+open_project LED_lab1/LED_lab1.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/192.168.51.92:2542]
+set_property PARAM.FREQUENCY 10000000 [get_hw_targets */xilinx_tcf/Xilinx/192.168.51.92:2542]
+open_hw_target
+set_property PROGRAM.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.bit} [get_hw_devices xcvu13p_0]
+set_property PROBES.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.ltx} [get_hw_devices xcvu13p_0]
+set_property FULL_PROBES.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.ltx} [get_hw_devices xcvu13p_0]
+current_hw_device [get_hw_devices xcvu13p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu13p_0] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/192.168.51.92:2542}
+disconnect_hw_server localhost:3121

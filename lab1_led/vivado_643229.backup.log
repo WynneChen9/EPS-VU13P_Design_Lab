@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2024.2_AR37126 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar 14 13:44:53 2025
+# Process ID         : 643229
+# Current directory  : /home/wynnechen/project/EPS_VU13P/lab/lab1_led
+# Command line       : vivado LED_lab1/LED_lab1.xpr
+# Log file           : /home/wynnechen/project/EPS_VU13P/lab/lab1_led/vivado.log
+# Journal file       : /home/wynnechen/project/EPS_VU13P/lab/lab1_led/vivado.jou
+# Running On         : WC-DemoNB
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 720.803 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 67111 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69259 MB
+# Available Virtual  : 64857 MB
+#-----------------------------------------------------------
+start_gui
+open_project LED_lab1/LED_lab1.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Runs 36-271] Incremental checkpoint part, xcvu19p-fsva3824-2-e, does not match run part, xcvu13p-fhgb2104-2-e.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/patches/AR37126_Vivado_2024_2_preliminary_rev1/vivado/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 8082.875 ; gain = 488.859 ; free physical = 34809 ; free virtual = 60780
+update_compile_order -fileset sources_1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_hw_manager
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server -url localhost:3121 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/192.168.51.92:2542]
+set_property PARAM.FREQUENCY 10000000 [get_hw_targets */xilinx_tcf/Xilinx/192.168.51.92:2542]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/192.168.51.92:2542
+set_property PROGRAM.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.bit} [get_hw_devices xcvu13p_0]
+set_property PROBES.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.ltx} [get_hw_devices xcvu13p_0]
+set_property FULL_PROBES.FILE {/home/wynnechen/project/EPS_VU13P/lab/lab1_led/LED_lab1/LED_lab1.runs/impl_1/db_wrapper.ltx} [get_hw_devices xcvu13p_0]
+current_hw_device [get_hw_devices xcvu13p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu13p_0] 0]
+INFO: [Labtools 27-2302] Device xcvu13p (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'db_i/ila_0' at location 'uuid_B2D5437882BE5681A3AD07B9D10AEFEB' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes db_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {db_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xcvu13p_0] -filter {CELL_NAME=~"db_i/vio_0"}]]
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/192.168.51.92:2542}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/192.168.51.92:2542
+disconnect_hw_server localhost:3121
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 14 14:43:09 2025...
