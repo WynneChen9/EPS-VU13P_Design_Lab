@@ -1,0 +1,12 @@
+*.bin
+*.bit
+*.tar.gz
+*.mp4
+*.exe
+*.o
+*.log
+*.jou
+__pycache__/
+build/
+output/
+

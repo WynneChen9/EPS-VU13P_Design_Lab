@@ -1,0 +1,286 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x44D5FBAD049AE0A9",
+      "device": "xcvu13p-fhgb2104-2-e",
+      "gen_directory": "../../../../led_chaser.gen/sources_1/bd/db",
+      "name": "db",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2_AR37126"
+    },
+    "design_tree": {
+      "util_ds_buf_0": "",
+      "util_ds_buf_1": "",
+      "vio_0": "",
+      "led_chaser_0": "",
+      "vio_1": ""
+    },
+    "interface_ports": {
+      "gclk_100m": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "CLK_N": {
+            "physical_name": "gclk_100m_clk_n",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "CLK_P": {
+            "physical_name": "gclk_100m_clk_p",
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "btn_rst": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "btn_mode": {
+        "direction": "I"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "util_ds_buf_0": {
+        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+        "ip_revision": "7",
+        "xci_name": "db_util_ds_buf_0_0",
+        "xci_path": "ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0.xci",
+        "inst_hier_path": "util_ds_buf_0"
+      },
+      "util_ds_buf_1": {
+        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+        "ip_revision": "7",
+        "xci_name": "db_util_ds_buf_0_1",
+        "xci_path": "ip/db_util_ds_buf_0_1/db_util_ds_buf_0_1.xci",
+        "inst_hier_path": "util_ds_buf_1",
+        "parameters": {
+          "C_BUF_TYPE": {
+            "value": "BUFG"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "db_vio_0_0",
+        "xci_path": "ip/db_vio_0_0/db_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_IN0_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE_IN1_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x1"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "led_chaser_0": {
+        "vlnv": "xilinx.com:module_ref:led_chaser:1.0",
+        "ip_revision": "1",
+        "xci_name": "db_led_chaser_0_0",
+        "xci_path": "ip/db_led_chaser_0_0/db_led_chaser_0_0.xci",
+        "inst_hier_path": "led_chaser_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "led_chaser",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "db_util_ds_buf_0_0_IBUF_OUT",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "btn_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "vio_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "vio_ctrl_enable": {
+            "direction": "I"
+          },
+          "vio_mode": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "btn_mode": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "mode": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "vio_1": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "db_vio_0_1",
+        "xci_path": "ip/db_vio_0_1/db_vio_0_1.xci",
+        "inst_hier_path": "vio_1",
+        "parameters": {
+          "C_EN_PROBE_IN_ACTIVITY": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "0"
+          },
+          "C_PROBE_IN0_WIDTH": {
+            "value": "2"
+          },
+          "C_PROBE_IN1_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE_IN2_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x1"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "3"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "gclk_100m_1": {
+        "interface_ports": [
+          "util_ds_buf_0/CLK_IN_D",
+          "gclk_100m"
+        ]
+      }
+    },
+    "nets": {
+      "btn_mode_1": {
+        "ports": [
+          "btn_mode",
+          "led_chaser_0/btn_mode"
+        ]
+      },
+      "btn_rst_1": {
+        "ports": [
+          "btn_rst",
+          "led_chaser_0/btn_rst"
+        ]
+      },
+      "led_chaser_0_led": {
+        "ports": [
+          "led_chaser_0/led",
+          "led",
+          "vio_1/probe_in1"
+        ]
+      },
+      "led_chaser_0_mode": {
+        "ports": [
+          "led_chaser_0/mode",
+          "vio_1/probe_in0"
+        ]
+      },
+      "util_ds_buf_0_IBUF_OUT": {
+        "ports": [
+          "util_ds_buf_0/IBUF_OUT",
+          "util_ds_buf_1/BUFG_I"
+        ]
+      },
+      "util_ds_buf_1_BUFG_O": {
+        "ports": [
+          "util_ds_buf_1/BUFG_O",
+          "vio_0/clk",
+          "vio_1/clk",
+          "led_chaser_0/clk"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "led_chaser_0/vio_rst"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "led_chaser_0/vio_ctrl_enable"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "led_chaser_0/vio_mode"
+        ]
+      }
+    }
+  }
+}

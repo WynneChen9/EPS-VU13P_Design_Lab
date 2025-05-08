@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "../../../../led_chaser.gen/sources_1/bd/db/ipshared/814a/hdl/verilog" --include "../../../../led_chaser.gen/sources_1/bd/db/ipshared/1017/hdl/verilog" --include "../../../../led_chaser.gen/sources_1/bd/db/ipshared/4506/hdl" \
+"../../../bd/db/ip/db_vio_0_0/sim/db_vio_0_0.v" \
+"../../../bd/db/ip/db_led_chaser_0_0/sim/db_led_chaser_0_0.v" \
+"../../../bd/db/ip/db_vio_0_1/sim/db_vio_0_1.v" \
+"../../../bd/db/sim/db.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

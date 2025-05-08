@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2024.2_AR37126 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Mar 13 10:30:01 2025
+# Process ID         : 133052
+# Current directory  : /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1
+# Command line       : vivado -log db_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source db_wrapper.tcl
+# Log file           : /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/db_wrapper.vds
+# Journal file       : /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/vivado.jou
+# Running On         : WC-DemoNB
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency      : 4231.172 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 67111 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69259 MB
+# Available Virtual  : 62633 MB
+#-----------------------------------------------------------
+source db_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/patches/AR37126_Vivado_2024_2_preliminary_rev1/vivado/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.srcs/utils_1/imports/synth_1/db_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.srcs/utils_1/imports/synth_1/db_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top db_wrapper -part xcvu13p-fhgb2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu13p'
+INFO: [Device 21-403] Loading part xcvu13p-fhgb2104-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 133133
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3019.344 ; gain = 330.859 ; free physical = 48977 ; free virtual = 57402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'db_wrapper' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/hdl/db_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'db' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:13]
+INFO: [Synth 8-6157] synthesizing module 'db_led_chaser_0_0' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_led_chaser_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db_led_chaser_0_0' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_led_chaser_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'db_util_ds_buf_0_0' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db_util_ds_buf_0_0' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'db_util_ds_buf_0_1' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db_util_ds_buf_0_1' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'db_vio_0_0' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db_vio_0_0' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_vio_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:60]
+INFO: [Synth 8-6157] synthesizing module 'db_vio_0_1' [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_vio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db_vio_0_1' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/.Xil/Vivado-133052-WC-DemoNB/realtime/db_vio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'db' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'db_wrapper' (0#1) [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/hdl/db_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:55]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'led_chaser_0'. This will prevent further optimization [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:39]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_1'. This will prevent further optimization [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/synth/db.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3091.312 ; gain = 402.828 ; free physical = 48883 ; free virtual = 57308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3091.312 ; gain = 402.828 ; free physical = 48890 ; free virtual = 57316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3091.312 ; gain = 402.828 ; free physical = 48890 ; free virtual = 57316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3091.312 ; gain = 0.000 ; free physical = 48890 ; free virtual = 57316
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc] for cell 'db_i/util_ds_buf_0'
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc] for cell 'db_i/util_ds_buf_0'
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_1/db_util_ds_buf_0_1/db_util_ds_buf_0_1_in_context.xdc] for cell 'db_i/util_ds_buf_1'
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_1/db_util_ds_buf_0_1/db_util_ds_buf_0_1_in_context.xdc] for cell 'db_i/util_ds_buf_1'
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_vio_0_0/db_vio_0_0/db_vio_0_0_in_context.xdc] for cell 'db_i/vio_0'
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_vio_0_0/db_vio_0_0/db_vio_0_0_in_context.xdc] for cell 'db_i/vio_0'
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_led_chaser_0_0/db_led_chaser_0_0/db_led_chaser_0_0_in_context.xdc] for cell 'db_i/led_chaser_0'
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_led_chaser_0_0/db_led_chaser_0_0/db_led_chaser_0_0_in_context.xdc] for cell 'db_i/led_chaser_0'
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_vio_0_1/db_vio_0_1/db_vio_0_1_in_context.xdc] for cell 'db_i/vio_1'
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_vio_0_1/db_vio_0_1/db_vio_0_1_in_context.xdc] for cell 'db_i/vio_1'
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/db_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/db_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3165.715 ; gain = 0.000 ; free physical = 48931 ; free virtual = 57353
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3165.715 ; gain = 0.000 ; free physical = 48931 ; free virtual = 57353
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3165.715 ; gain = 477.230 ; free physical = 48941 ; free virtual = 57384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu13p-fhgb2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3173.719 ; gain = 485.234 ; free physical = 48941 ; free virtual = 57384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for gclk_100m_clk_n[0]. (constraint file  /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gclk_100m_clk_n[0]. (constraint file  /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for gclk_100m_clk_p[0]. (constraint file  /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for gclk_100m_clk_p[0]. (constraint file  /home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.gen/sources_1/bd/db/ip/db_util_ds_buf_0_0/db_util_ds_buf_0_0/db_util_ds_buf_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i/util_ds_buf_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i/util_ds_buf_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i/led_chaser_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for db_i/vio_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3173.719 ; gain = 485.234 ; free physical = 48941 ; free virtual = 57384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3173.719 ; gain = 485.234 ; free physical = 48939 ; free virtual = 57383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3173.719 ; gain = 485.234 ; free physical = 48963 ; free virtual = 57388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3631.680 ; gain = 943.195 ; free physical = 48559 ; free virtual = 57005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3631.680 ; gain = 943.195 ; free physical = 48559 ; free virtual = 57005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3640.695 ; gain = 952.211 ; free physical = 48551 ; free virtual = 56997
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |db_led_chaser_0_0  |         1|
+|2     |db_util_ds_buf_0_0 |         1|
+|3     |db_util_ds_buf_0_1 |         1|
+|4     |db_vio_0_0         |         1|
+|5     |db_vio_0_1         |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |db_led_chaser_0  |     1|
+|2     |db_util_ds_buf_0 |     2|
+|4     |db_vio_0         |     2|
+|6     |IBUF             |     2|
+|7     |OBUF             |     4|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3811.508 ; gain = 1048.621 ; free physical = 48418 ; free virtual = 56864
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3811.508 ; gain = 1123.023 ; free physical = 48418 ; free virtual = 56864
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3811.508 ; gain = 0.000 ; free physical = 48588 ; free virtual = 57035
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3811.508 ; gain = 0.000 ; free physical = 48590 ; free virtual = 57036
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+Synth Design complete | Checksum: b118912c
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 3811.508 ; gain = 2278.910 ; free physical = 48590 ; free virtual = 57036
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2885.273; main = 2885.273; forked = 243.256
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4091.691; main = 3771.871; forked = 917.969
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3811.508 ; gain = 0.000 ; free physical = 48590 ; free virtual = 57036
+INFO: [Common 17-1381] The checkpoint '/home/wynnechen/project/EPS_VU13P/lab/lab2_led_status/led_chaser/led_chaser.runs/synth_1/db_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file db_wrapper_utilization_synth.rpt -pb db_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 13 10:30:30 2025...
